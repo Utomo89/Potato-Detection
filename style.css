@@ -1,0 +1,36 @@
+body { 
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0f9f0 0%, #e6f4e6 100%);
+}
+.gradient-bg {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),
+              0 10px 10px -5px rgba(0,0,0,0.04);
+}
+.upload-area {
+  border: 2px dashed #d1d5db;
+  transition: all 0.3s ease;
+}
+.upload-area:hover, 
+.upload-area.dragover {
+  border-color: #22c55e;
+  background-color: #f0fdf4;
+}
+.confidence-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+.confidence-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  transition: width 1s ease-in-out;
+}
